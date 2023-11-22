@@ -22,6 +22,6 @@ func HandleError(err error) {
 		fmt.Printf("│  %s User OS: %s\n", aurora.Cyan("→"), os)
 		fmt.Printf("│  %s Go Version: %s\n", aurora.Cyan("→"), goVersion)
 		fmt.Println("╰───────────────────────────────────")
-		os.Exit(1)
+		panic("^^^^^^^^^^^^^^")
 	}
 }
