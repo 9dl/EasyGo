@@ -1,4 +1,4 @@
-module github.com/9dl/EasyGo.git
+module github.com/9dl/EasyGo
 
 go 1.21.4
 
