@@ -1,11 +1,12 @@
 package easygo
 
 import (
-	helpers "easygo/helpers"
 	"errors"
 	"os"
 	"os/exec"
 	"runtime"
+
+	helpers "github.com/9dl/EasyGo/helpers"
 )
 
 func ConsoleClear() {
@@ -17,6 +18,7 @@ func ConsoleClear() {
 		cmd = exec.Command("clear")
 	} else {
 		helpers.HandleError(errors.New("helpers.HandleError(err)"))
+
 	}
 
 	cmd.Stdout = os.Stdout

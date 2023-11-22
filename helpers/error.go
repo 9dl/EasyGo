@@ -7,7 +7,7 @@ import (
 	"github.com/logrusorgru/aurora"
 )
 
-func handleError(err error) {
+func HandleError(err error) {
 	if err != nil {
 		pc, filename, line, _ := runtime.Caller(1)
 

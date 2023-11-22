@@ -1,8 +1,7 @@
 package easygo
 
 import (
-	helpers "easygo/helpers"
-
+	helpers "github.com/9dl/EasyGo/helpers"
 	"github.com/gen2brain/dlgs"
 )
 
