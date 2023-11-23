@@ -43,4 +43,4 @@ func main() {
 }
 ```
 
-[Next Page](/Strings.md)
+[Next Page](/docs/Strings.md)
