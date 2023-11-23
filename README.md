@@ -17,6 +17,7 @@
 - **ReadKey**: Waits for User Input (Key)
 - **Usage**: CPU and RAM % Usage
 - **MessageBox**: Info, Warning, Error MessageBox
+- Many more....
 
 ## Features
 - **[Error Handling](/images/error_handling.png)**: Easy to understand Error Handling
