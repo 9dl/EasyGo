@@ -20,4 +20,4 @@ func main() {
 }
 ```
 
-[Next Page](/MessageBox.md)
+[Next Page](/docs/MessageBox.md)
