@@ -1,5 +1,5 @@
 # EasyGo
-- Soon
+- Easy & Efficient Libary for fasting Coding (currently in Development)
 
 # Error Handling
 ![](/images/error_handling.png)
