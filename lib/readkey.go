@@ -1,9 +1,11 @@
 package easygo
 
-import "github.com/eiannone/keyboard"
+import (
+	"fmt"
+)
 
 func ReadKey() {
-	keyboard.GetSingleKey()
+	fmt.Scanln()
 }
 
 /*
