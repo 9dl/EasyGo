@@ -71,4 +71,4 @@ func main() {
 }
 ```
 
-[Next Page](/ReadKey.md)
+[Next Page](/docs/ReadKey.md)
