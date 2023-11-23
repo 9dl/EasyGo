@@ -24,4 +24,4 @@ func main() {
 }
 ```
 
-[Next Page](/Title.md)
+[Next Page](/docs/Title.md)
