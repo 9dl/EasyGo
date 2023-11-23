@@ -54,16 +54,3 @@ func getUsage() (float64, float64, error) {
 
 	return cpuUsage, memoryUsage, nil
 }
-
-/*
-func main() {
-	cpuUsage, memoryUsage, err := getUsage()
-	if err != nil {
-		fmt.Printf("Error: %v\n", err)
-		return
-	}
-
-	fmt.Printf("CPU Usage: %.2f%%\n", cpuUsage)
-	fmt.Printf("Memory Usage: %.2f%%\n", memoryUsage)
-}
-*/

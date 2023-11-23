@@ -23,9 +23,3 @@ func ConsoleClear() {
 	cmd.Stdout = os.Stdout
 	cmd.Run()
 }
-
-/*
-func main() {
-	ConsoleClear()
-}
-*/

@@ -23,18 +23,3 @@ func GetKey() (rune, error) {
 	}
 	return char, nil
 }
-
-/*
-func main() {
-	ReadKey()
-}
-
-func main() {
-	char, err := GetKey()
-	if err != nil {
-		helpers.HandleError(err)
-	} else {
-		fmt.Printf("You pressed: %c\n", char)
-	}
-}
-*/
