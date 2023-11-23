@@ -21,6 +21,11 @@ To use EasyGo in your Go project, follow these simple steps:
    import "github.com/9dl/EasyGo"
    ```
 
+3. Get all necessary Packages
+   ```go
+   go mod tidy
+   ```
+
 Now you're ready to use the EasyGo package in your project!
 
 [Next Page](/docs/Clear.md)
