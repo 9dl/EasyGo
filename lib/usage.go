@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"time"
 
+	helpers "github.com/9dl/EasyGo/helpers"
+
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/shirou/gopsutil/host"
 	"github.com/shirou/gopsutil/mem"
@@ -23,31 +25,31 @@ func getUsage() (float64, float64, error) {
 	case "linux":
 		cpuPercent, err := cpu.PercentWithContext(context.Background(), time.Second, false)
 		if err != nil {
-			return 0, 0, fmt.Errorf("failed to get CPU usage: %v", err)
+			helpers.HandleError(err)
 		}
 		cpuUsage = cpuPercent[0]
 
 		memory, err := mem.VirtualMemory()
 		if err != nil {
-			return 0, 0, fmt.Errorf("failed to get memory usage: %v", err)
+			helpers.HandleError(err)
 		}
 		memoryUsage = float64(memory.Used) / float64(memory.Total) * 100
 
 	case "windows":
 		cpuPercent, err := cpu.PercentWithContext(context.Background(), time.Second, true)
 		if err != nil {
-			return 0, 0, fmt.Errorf("failed to get CPU usage: %v", err)
+			helpers.HandleError(err)
 		}
 		cpuUsage = cpuPercent[0]
 
 		memory, err := mem.VirtualMemory()
 		if err != nil {
-			return 0, 0, fmt.Errorf("failed to get memory usage: %v", err)
+			helpers.HandleError(err)
 		}
 		memoryUsage = float64(memory.Used) / float64(memory.Total) * 100
 
 	default:
-		return 0, 0, fmt.Errorf("unsupported operating system: %s", info.OS)
+		helpers.HandleError(fmt.Errorf("Unsupported OS")
 	}
 
 	return cpuUsage, memoryUsage, nil

@@ -10,8 +10,8 @@ import (
 )
 
 func ConsoleTitle(title string) {
-	if _, ok := os.LookupEnv("TERM"); !ok && runtime.GOOS != "window2s" {
-		helpers.HandleError(errors.New("Terminal does not support ANSI escape codes. Unable to set console title."))
+	if _, ok := os.LookupEnv("TERM"); !ok && runtime.GOOS != "windows" {
+		helpers.HandleError(errors.New("Terminal does not support ANSI escape codes"))
 	}
 
 	fmt.Printf("\033]0;%s\007", title)
