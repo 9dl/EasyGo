@@ -17,8 +17,7 @@ func ConsoleClear() {
 	} else if runtime.GOOS == "linux" {
 		cmd = exec.Command("clear")
 	} else {
-		helpers.HandleError(errors.New("helpers.HandleError(err)"))
-
+		helpers.HandleError(errors.New("Unsupported OS for ConsoleClear()"))
 	}
 
 	cmd.Stdout = os.Stdout
