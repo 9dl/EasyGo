@@ -2,7 +2,7 @@
 - Soon
 
 # Error Handling
-![](/image.png)
+![](/images/error_handling.png)
 
 # Supported OS
 - Linux
