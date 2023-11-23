@@ -49,7 +49,7 @@ func getUsage() (float64, float64, error) {
 		memoryUsage = float64(memory.Used) / float64(memory.Total) * 100
 
 	default:
-		helpers.HandleError(fmt.Errorf("Unsupported OS")
+		helpers.HandleError(fmt.Errorf("Unsupported OS"))
 	}
 
 	return cpuUsage, memoryUsage, nil
