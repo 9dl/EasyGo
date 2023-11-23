@@ -3,7 +3,6 @@ module github.com/9dl/EasyGo
 go 1.21.4
 
 require (
-	github.com/eiannone/keyboard v0.0.0-20220611211555-0d226195f203
 	github.com/gen2brain/dlgs v0.0.0-20220603100644-40c77870fa8d
 	github.com/logrusorgru/aurora v2.0.3+incompatible
 	github.com/shirou/gopsutil v3.21.11+incompatible
