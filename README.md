@@ -4,7 +4,7 @@
 
 <h2 align="center">Easy & Efficient Library for Fast Coding</h2>
 <p align="center">
-  **[Documentation](/docs/Installation.md)**
+  Beta
 </p>
 
 ## Supported OS
@@ -21,6 +21,7 @@
 
 ## Features
 - **[Error Handling](/images/error_handling.png)**: Easy to understand Error Handling
+- **[Documentation](/docs/Installation.md)**
 
 
 ---
