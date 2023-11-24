@@ -4,7 +4,7 @@
 
 <h2 align="center">Easy & Efficient Library for Fast Coding</h2>
 <p align="center">
-  (Currently in development)
+  **[Documentation](/docs/Installation.md)**
 </p>
 
 ## Supported OS
